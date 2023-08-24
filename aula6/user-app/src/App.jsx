@@ -8,6 +8,8 @@ function App() {
    <div>
     <Container>
     <Menu/>
+    <br /><br />
+    SEJA BEM VINDO!
     <Footer/>
     </Container>
    </div>

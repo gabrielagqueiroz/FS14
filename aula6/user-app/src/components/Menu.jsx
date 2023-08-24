@@ -8,7 +8,7 @@ export default function Menu() {
     <>
       <Navbar bg="light" data-bs-theme="light">
         <Container>
-          <Navbar.Brand href="#home">UserApp</Navbar.Brand>
+          <Navbar.Brand href="/user-app">UserApp</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/usuarios">Usuários</Nav.Link>

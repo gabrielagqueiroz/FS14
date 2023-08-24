@@ -10,11 +10,12 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UsuariosTable from './pages/UsuariosTable';
 import UsuarioForm from './pages/UsuarioForm';
+import Contato from './components/Contato';
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/user-app",
     element: <Login/>,
   },
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/usuario/:id",
     element: <UsuarioForm/>,
+  },
+  {
+    path: "/contato",
+    element: <Contato/>,
   }
 ]);
 

@@ -1,7 +1,7 @@
 
 export default function Login() {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 center" style={{maxWidth: '35%'}}>
       <main class="form-signin w-100 m-auto">
         <form>
           <img
