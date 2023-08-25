@@ -11,28 +11,35 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import UsuariosTable from './pages/UsuariosTable';
 import UsuarioForm from './pages/UsuarioForm';
 import Contato from './components/Contato';
+import Home from './pages/Home';
 
 
 const router = createBrowserRouter([
   {
-    path: "/user-app",
-    element: <Login/>,
-  },
-  {
-    path: "/home",
+    path: "/",
     element: <App/>,
+    children: [
+      {
+        path: "/home",
+        element: <Home/>,
+      },
+      {
+        path: "/usuarios",
+        element: <UsuariosTable/>,
+      },
+      {
+        path: "/usuario/:id",
+        element: <UsuarioForm/>,
+      },
+      {
+        path: "/contato",
+        element: <Contato/>,
+      }
+    ]
   },
   {
-    path: "/usuarios",
-    element: <UsuariosTable/>,
-  },
-  {
-    path: "/usuario/:id",
-    element: <UsuarioForm/>,
-  },
-  {
-    path: "/contato",
-    element: <Contato/>,
+    path: "/login",
+    element: <Login/>
   }
 ]);
 

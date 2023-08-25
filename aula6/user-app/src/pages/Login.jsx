@@ -1,9 +1,19 @@
+import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  
+  const navigate = useNavigate()
+
+  const login = () => {
+    event.preventDefault()
+    navigate('/home')
+  }
+
   return (
     <div className="container mt-5 center" style={{maxWidth: '35%'}}>
       <main class="form-signin w-100 m-auto">
-        <form>
+        <form onSubmit={login}>
           <img
             class="mb-4"
             src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
@@ -43,9 +53,7 @@ export default function Login() {
               Remember me
             </label>
           </div>
-          <button class="btn btn-primary w-100 py-2" type="submit">
-            Sign in
-          </button>
+          <Button className="w-100 py-2" variant="primary" type="submit">Logar</Button>
           <p class="mt-5 mb-3 text-body-secondary">© 2017–2023</p>
         </form>
       </main>

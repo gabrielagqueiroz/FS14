@@ -3,11 +3,8 @@ import Menu from "../components/Menu";
 
 export default function Usuarios() {
     return(
-        <div className="container">
-           <Menu/>
-           <br /> <br />
+        <div>
            USUARIOS TABLE
-           <Footer/>
         </div>
     )
 }

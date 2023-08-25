@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap"
 import Footer from "./components/Footer"
 import Menu from "./components/Menu"
+import { Outlet } from "react-router-dom"
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <Container>
     <Menu/>
     <br /><br />
-    SEJA BEM VINDO!
+    <Outlet/>
     <Footer/>
     </Container>
    </div>
